@@ -1,14 +1,19 @@
-import { useState } from "react";
-import { Banner } from "../Banner/Banner";
+import { MouseEventHandler, useState } from "react";
+import { Banner, QrMenu } from "../";
 import "./App.scss";
 
 export const App = () => {
-  const [pause, setPause] = useState<boolean>(false);
+  const [menu, setMenu] = useState<boolean>(false);
+
+  const toggleMenu: MouseEventHandler<HTMLButtonElement> = () => {
+    setMenu(!menu);
+  };
 
   return (
     <div className="app">
       <div className="app-wrapper">
-        <Banner pause={pause} />
+        <Banner menu={menu} />
+        <QrMenu toggleMenu={toggleMenu} menu={menu} />
       </div>
     </div>
   );

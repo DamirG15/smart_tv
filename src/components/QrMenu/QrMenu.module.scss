@@ -1,0 +1,10 @@
+@import "/src/assets/styles/_variables.scss";
+
+.Menu {
+  position: relative;
+  display: flex;
+
+  margin-left: auto;
+
+  z-index: $z-index-interface;
+}
