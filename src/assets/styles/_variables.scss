@@ -1,6 +1,21 @@
+// colors
+$white: #fff;
+$black: #000;
+$light-blue: #86d3f4;
+
 // sizes
 $app-width: 1280px;
 $app-height: 720px;
 
+$qrcode-small: 110px;
+$qrcode-medium: 126px;
+
+// transitions
+$transition-duration-regular: 0.12s;
+$transition-duration-medium: 0.3s;
+$transition-delay-medium: 10s;
+$transition-function: ease-in-out;
+
 // z-indexes
 $z-index-banner: 10;
+$z-index-interface: 20;

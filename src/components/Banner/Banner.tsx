@@ -3,17 +3,17 @@ import video from "../../assets/videos/commercial.mp4";
 import cls from "./Banner.module.scss";
 
 interface BannerProps {
-  pause: boolean;
+  menu: boolean;
 }
 
-export const Banner = ({ pause }: BannerProps) => {
+export const Banner = ({ menu }: BannerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      pause ? videoRef.current.pause() : videoRef.current.play();
+      menu ? videoRef.current.pause() : videoRef.current.play();
     }
-  }, [pause]);
+  }, [menu]);
 
   return (
     <div className={cls.Wrapper}>
