@@ -4,14 +4,13 @@ import QrMenuOpen from "./QrMenuOpen/QrMenuOpen";
 import cls from "./QrMenu.module.scss";
 
 interface QrMenuProps {
-  menu: boolean;
+  open: boolean;
   toggleMenu: MouseEventHandler<HTMLButtonElement>;
 }
-
-export const QrMenu = ({ toggleMenu, menu }: QrMenuProps) => {
+const QrMenu = ({ toggleMenu, open }: QrMenuProps) => {
   return (
     <div className={cls.Menu}>
-      {menu ? (
+      {open ? (
         <QrMenuClosed toggleMenu={toggleMenu} />
       ) : (
         <QrMenuOpen toggleMenu={toggleMenu} />
@@ -19,3 +18,5 @@ export const QrMenu = ({ toggleMenu, menu }: QrMenuProps) => {
     </div>
   );
 };
+
+export default QrMenu;

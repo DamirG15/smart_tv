@@ -11,7 +11,7 @@ const QrMenuOpen = ({
 }) => {
   return (
     <div className={cls.Open}>
-      <p className={cls.Title}>{QrMenuData.title}</p>
+      <h2 className={cls.Title}>{QrMenuData.title}</h2>
       <img className={cls.QrcodeMedium} src={qrcode} alt="qrcode" />
       <p className={cls.Scan}>{QrMenuData.scan}</p>
       <Button onClick={toggleMenu} className={cls.OpenBtn}>

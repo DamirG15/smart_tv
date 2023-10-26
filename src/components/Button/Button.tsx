@@ -6,9 +6,13 @@ interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   className?: string;
   onSubmit?: FormEventHandler<HTMLButtonElement>;
+  value?: string;
+  disabled?: boolean;
+  tabIndex?: number;
+  type?: "submit" | "reset" | "button" | undefined;
 }
 
-export const Button = ({ children, className, ...other }: ButtonProps) => {
+const Button = ({ children, className, ...other }: ButtonProps) => {
   return (
     <button
       className={`${cls.Button}${className ? ` ${className}` : ""}`}
@@ -18,3 +22,5 @@ export const Button = ({ children, className, ...other }: ButtonProps) => {
     </button>
   );
 };
+
+export default Button;
