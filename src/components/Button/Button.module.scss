@@ -6,3 +6,7 @@
   cursor: pointer;
   transition: all $transition-duration-regular $transition-function;
 }
+
+.Button:disabled {
+  cursor: auto;
+}

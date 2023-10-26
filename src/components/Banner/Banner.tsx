@@ -3,17 +3,17 @@ import video from "../../assets/videos/commercial.mp4";
 import cls from "./Banner.module.scss";
 
 interface BannerProps {
-  menu: boolean;
+  open: boolean;
 }
 
-export const Banner = ({ menu }: BannerProps) => {
+const Banner = ({ open }: BannerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      menu ? videoRef.current.pause() : videoRef.current.play();
+      open ? videoRef.current.pause() : videoRef.current.play();
     }
-  }, [menu]);
+  }, [open]);
 
   return (
     <div className={cls.Wrapper}>
@@ -23,3 +23,5 @@ export const Banner = ({ menu }: BannerProps) => {
     </div>
   );
 };
+
+export default Banner;
