@@ -3,18 +3,18 @@ import { Banner, QrMenu, Form, AcceptedMessage } from "../";
 import cls from "./MainPage.module.scss";
 
 const MainPage = () => {
-  const [open, setMenu] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
   const [submit, setSubmit] = useState(false);
 
   const toggleMenu: MouseEventHandler<HTMLButtonElement> = () => {
-    setMenu(!open);
+    setOpen((prev) => !prev);
   };
 
   const onFormSubmit = () => {
     setSubmit(true);
 
     setTimeout(() => {
-      setMenu(false);
+      setOpen(false);
       setSubmit(false);
     }, 3000);
   };

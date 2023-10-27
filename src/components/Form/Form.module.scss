@@ -16,7 +16,7 @@
 }
 
 .Input {
-  width: 260px;
+  width: 280px;
   height: 40px;
 
   padding: 0;
@@ -63,6 +63,16 @@
 .Button:hover {
   background-color: $black;
   color: $white;
+}
+
+.Error {
+  margin-bottom: 15px;
+
+  color: $red;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .Label {

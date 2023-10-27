@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.2.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-input-mask": "^2.0.4",
     "react-scripts": "5.0.1",
     "sass": "^1.69.4",
     "sass-loader": "^13.3.2",
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-input-mask": "^3.0.4",
     "normalize.css": "^8.0.1"
   }
 }

@@ -1,19 +1,19 @@
 import { MouseEventHandler } from "react";
 import qrcode from "../../../assets/images/qrcode.png";
-import CloseIcon from "../../../assets/images/closeIcone.svg";
+import CloseIcon from "./CloseIcon";
 import { Button } from "../..";
 import { QrMenuData } from "../../../data/constants";
 import cls from "./QrMenuClosed.module.scss";
 
-const QrMenuClosed = ({
-  toggleMenu,
-}: {
+interface QrMenuProps {
   toggleMenu: MouseEventHandler<HTMLButtonElement>;
-}) => {
+}
+
+const QrMenuClosed = ({ toggleMenu }: QrMenuProps) => {
   return (
     <div className={cls.Closed}>
       <Button className={cls.CloseBtn} onClick={toggleMenu}>
-        {/* <CloseIcon className={cls.CloseIcon} /> */}
+        <CloseIcon className={cls.CloseIcon} />
       </Button>
       <div className={cls.ClosedWrapper}>
         <p className={cls.Descr}>{QrMenuData.descr}</p>
