@@ -1,0 +1,12 @@
+.Input {
+  background-color: transparent;
+  border: none;
+}
+
+.Input:focus-visible {
+  outline: none;
+}
+
+.Input::placeholder {
+  color: inherit;
+}

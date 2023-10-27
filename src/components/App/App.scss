@@ -1,6 +1,13 @@
+@import "~normalize.css";
+@import "../../assets/styles/_variables.scss";
+@import "../../assets/styles/_fonts.scss";
+@import "../../assets/styles/_reset.scss";
+
 .app {
-  width: 1280px;
-  height: 720px;
+  font-family: "Roboto", sans-serif;
+
+  width: $app-width;
+  height: $app-height;
 
   margin: 0 auto;
 }

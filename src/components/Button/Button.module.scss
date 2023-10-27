@@ -1,0 +1,12 @@
+@import "/src/assets/styles/_variables.scss";
+
+.Button {
+  padding: 0;
+
+  cursor: pointer;
+  transition: all $transition-duration-regular $transition-function;
+}
+
+.Button:disabled {
+  cursor: auto;
+}

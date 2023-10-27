@@ -1,11 +1,12 @@
-import React from "react";
-import { Banner } from "../Banner/Banner";
+import { MainPage } from "../";
 import "./App.scss";
 
-export const App = () => {
+const App = () => {
   return (
     <div className="app">
-      <Banner />
+      <MainPage />
     </div>
   );
 };
+
+export default App;

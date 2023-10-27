@@ -1,0 +1,50 @@
+@import "/src/assets/styles/_variables.scss";
+
+.Closed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 315px;
+  height: 100%;
+}
+
+.CloseBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 88px;
+  height: 52px;
+
+  margin-left: auto;
+
+  background-color: $white;
+  color: $black;
+  border: 2px solid $black;
+}
+
+.CloseBtn:hover {
+  background-color: $black;
+  color: $white;
+}
+
+.ClosedWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Descr {
+  color: $white;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.QrcodeSmall {
+  width: $qrcode-small;
+  height: $qrcode-small;
+}
