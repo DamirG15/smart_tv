@@ -4,11 +4,11 @@ import { Button } from "../..";
 import { QrMenuData } from "../../../data/constants";
 import cls from "./QrMenuOpen.module.scss";
 
-const QrMenuOpen = ({
-  toggleMenu,
-}: {
+interface QrMenuProps {
   toggleMenu: MouseEventHandler<HTMLButtonElement>;
-}) => {
+}
+
+const QrMenuOpen = ({ toggleMenu }: QrMenuProps) => {
   return (
     <div className={cls.Open}>
       <h2 className={cls.Title}>{QrMenuData.title}</h2>
